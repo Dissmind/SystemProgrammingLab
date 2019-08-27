@@ -3,6 +3,8 @@
 #include "menu.h"
 #include "mathwork.h"
 #include "arraywork.h"
+#include "stringwork.h"
+#include "structwork.h"
 
 Menu::Menu(){}
 
@@ -14,7 +16,7 @@ void Menu::enterVariant(){
 }
 
 
-//
+// Стартовый метод программы
 void Menu::startProgram(){
     Menu a;
     a.enterVariant();
@@ -48,8 +50,10 @@ void Menu::mainMenu(){
 
 // Обработчик главного меню
 void Menu::runWork(){
-    MathWork lab2(variant);
-    ArrayWork lab4(variant);
+    MathWork   lab2(variant);
+    ArrayWork  lab4(variant);
+    StringWork lab5(variant);
+    StructWork lab7(variant);
 
     switch(Menu::choiceMenuPoint)
     {
@@ -62,11 +66,11 @@ void Menu::runWork(){
         break;
 
     case 3:
-        lab4.work();
+        lab5.work();
         break;
 
     case 4:
-        lab4.work();
+        lab7.work();
         break;
 
     case 5:

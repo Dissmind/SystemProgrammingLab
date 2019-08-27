@@ -7,6 +7,11 @@
 #include "menu.h"
 
 
+
+
+
+
+
 int main()
 {
     SetConsoleCP(1251);
@@ -14,5 +19,6 @@ int main()
     setlocale(LC_ALL, "Russian");
 
     Menu::startProgram();
+
     return 0;
 }

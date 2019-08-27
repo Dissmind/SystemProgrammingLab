@@ -11,14 +11,14 @@ private:
         real
     };
 
-    int v;
+    int variant;
     int arraySize;
 
     int enterArraySize();
     void enterDateIntegerArray(int *array);
 
-    int initTypeArray(int v);
-    void fillArray(int *array);
+    int initTypeArray(int variant);
+
 public:
     ArrayWork(int var);
     void work();

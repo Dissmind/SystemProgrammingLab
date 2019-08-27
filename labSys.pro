@@ -8,11 +8,16 @@ SOURCES += \
         checkdate.cpp \
         main.cpp \
         mathwork.cpp \
-        menu.cpp
+        menu.cpp \
+        stringwork.cpp \
+        structwork.cpp
 
 HEADERS += \
     arraywork.h \
     checkdate.h \
+    liststruct.h \
     macro.h \
     mathwork.h \
-    menu.h
+    menu.h \
+    stringwork.h \
+    structwork.h

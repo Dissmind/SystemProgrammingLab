@@ -17,7 +17,7 @@ private:
     double minNum(double a, double b, double c); // Возвращает минимальный элемент
 
 public:
-    MathWork(int var);
+    MathWork(int variant);
     void work();
 
 };

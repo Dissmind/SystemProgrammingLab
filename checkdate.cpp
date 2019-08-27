@@ -1,13 +1,13 @@
 #include "checkdate.h"
 
+#include <iostream>
+#include <string>
+
+
 CheckDate::CheckDate()
 {
 
 }
-
-
-
-
 
 
 
@@ -23,6 +23,8 @@ bool CheckDate::rangeArraySize(int num){
 }
 
 
-bool CheckDate::integer(){
+bool CheckDate::integer(std::wstring enter){
+
+
     return true;
 }

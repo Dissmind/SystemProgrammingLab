@@ -1,6 +1,11 @@
 #include <iostream>
 #include <string>
 
+#include <stdlib.h>
+#include <stdio.h>
+#include <wchar.h>
+
+
 #include "arraywork.h"
 #include "checkdate.h"
 #include "menu.h"
@@ -30,23 +35,26 @@ int ArrayWork::enterArraySize(){
 
 
 void ArrayWork::enterDateIntegerArray(int *array){
-    std::wcout << L"Ручной ввод данных" << std::endl << std::endl;
+//    std::wcout << L"Ручной ввод данных" << std::endl << std::endl;
 
-    int enter;
+//    std::string enter = "2234";
 
-    for (int i = 0; i < arraySize; i++) {
-        std::wcout << L"[" << i + 1 << L"] >>> ";
-        std::wcin >> enter;
-        std::wcout << std::endl;
+//    for (int i = 0; i < arraySize; i++) {
+//        std::wcout << L"[" << i + 1 << L"] >>> ";
+//        //std::wcin >> enter;
+//        //std::getline(std::wcin, enter);
+//        //std::wcin.getline()
+//        std::wcout << std::endl;
 
-        if (CheckDate::integer()){
-            array[i] = enter;
-            continue;
-        }
+//        if (CheckDate::integer(enter)){
+//            int e = enter;
+//            array[i] = e;
+//            continue;
+//        }
 
-        std::wcout << std::endl
-                   << L"Ошибка вводных данных! Повторите попытку!" << std::endl;
-    }
+//        std::wcout << std::endl
+//                   << L"Ошибка вводных данных! Повторите попытку!" << std::endl;
+//    }
 }
 
 
